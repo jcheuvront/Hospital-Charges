@@ -21,5 +21,10 @@ namespace Hospital_Charges
         {
 
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
