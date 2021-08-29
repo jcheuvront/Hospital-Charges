@@ -53,7 +53,7 @@ namespace Hospital_Charges
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double misc, med, surg, lab, rehab;
+            double misc;
             misc = CalcMiscCharges(Convert.ToDouble(textBox5.Text), Convert.ToDouble(textBox6.Text), 
                         Convert.ToDouble(textBox7.Text), Convert.ToDouble(textBox8.Text));
             label10.Text = misc.ToString();
@@ -61,7 +61,9 @@ namespace Hospital_Charges
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            double total;
+            total = CalcTotalCharges(Convert.ToDouble(label3.Text), Convert.ToDouble(label10.Text));
+            label13.Text = total.ToString();
         }
     }
 }
