@@ -29,10 +29,7 @@ namespace Hospital_Charges
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,14 +47,10 @@ namespace Hospital_Charges
             this.label10 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(485, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
@@ -65,20 +58,6 @@ namespace Hospital_Charges
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 23);
             this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(485, 139);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(485, 191);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 3;
             // 
             // button1
             // 
@@ -223,18 +202,48 @@ namespace Hospital_Charges
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(485, 23);
+            this.label11.Location = new System.Drawing.Point(462, 124);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(126, 15);
+            this.label11.Size = new System.Drawing.Size(129, 15);
             this.label11.TabIndex = 20;
-            this.label11.Text = "Hospital Stay Charges";
+            this.label11.Text = "Total Hospital Charges";
             this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(462, 148);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(266, 15);
+            this.label12.TabIndex = 21;
+            this.label12.Text = "Below you will see the total charges for your stay.";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(462, 183);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(164, 23);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Calculate Total Charges";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(656, 191);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(44, 15);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "label13";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button2);
@@ -252,10 +261,7 @@ namespace Hospital_Charges
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -264,11 +270,7 @@ namespace Hospital_Charges
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -286,6 +288,9 @@ namespace Hospital_Charges
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label13;
     }
 }
 
