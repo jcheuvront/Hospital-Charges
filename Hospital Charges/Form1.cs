@@ -29,31 +29,39 @@ namespace Hospital_Charges
 
         }
 
+        private double CalcTotalCharges(double stay, double misc)
+        {
+            return stay + misc;
+
+        }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
-
-           
-
         }
 
         private void label11_Click(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double result;
-            result = CalcStayCharges(Convert.ToDouble(textBox2.Text));
-            label3.Text = result.ToString();
+            double stay;
+            stay = CalcStayCharges(Convert.ToDouble(textBox2.Text));
+            label3.Text = stay.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double result, med, surg, lab, rehab;
-            result = CalcMiscCharges(Convert.ToDouble(textBox5.Text), Convert.ToDouble(textBox6.Text), Convert.ToDouble(textBox7.Text), Convert.ToDouble(textBox8.Text));
-            label10.Text = result.ToString();
+            double misc, med, surg, lab, rehab;
+            misc = CalcMiscCharges(Convert.ToDouble(textBox5.Text), Convert.ToDouble(textBox6.Text), 
+                        Convert.ToDouble(textBox7.Text), Convert.ToDouble(textBox8.Text));
+            label10.Text = misc.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
